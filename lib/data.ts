@@ -1,107 +1,88 @@
-import React from "react";
+import React from "react"; 
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { link } from "fs";
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Experience", hash: "#experience" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Frontend Developer",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+      "Developed dynamic and responsive web applications using React, Vue, and Redux, enhancing UI/UX experiences.",
+    icon: React.createElement(CgWorkAlt),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full Stack Developer",
+    location: "Remote",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Led frontend and backend development at Hukumat Networks, working extensively with Next.js, Golang, Node.js, and TypeScript. Contributed as a founding engineer on key projects.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2021-2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Developer Lead",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Spearheaded development for PassKash, focusing on blockchain technology, crypto wallets, and fintech solutions.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024",
+  },
+  {
+    title: "Full Stack Developer",
+    location: "Remote",
+    description:
+      "Engineered a robust Transportation Management System (TMS) for the logistics industry at Ultraship, utilizing Next.js, TypeScript, GraphQL, Java, and Spring Boot.",
+    icon: React.createElement(FaReact),
+    date: "2024 - 2025",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "JobbyAi",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "An AI-powered SaaS platform that assists users in career development. It provides industry insights, AI-generated resumes, cover letters, and interactive quizzes.",
+    tags: ["React", "Next.js", "NeonDB", "Tailwind", "Prisma", "Gemini AI"],
+    imageUrl: "/p2.png",
+    githubUrl:"https://github.com/Roshan12here/JobbyAI",
+    Link:"https://jobby-ai.vercel.app"
   },
   {
-    title: "rmtDev",
+    title: "CodeCrafts",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A collaborative platform where developers can share, execute, and test code snippets in multiple languages.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Convex"],
+    imageUrl: "/p1.png",
+    githubUrl:"https://github.com/Roshan12here/CodeCraft",
+    Link:"https://code-crafts-roshan.vercel.app/"
   },
   {
-    title: "Word Analytics",
+    title: "LiveDocs",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A real-time document collaboration tool similar to Google Docs, allowing multiple users to edit documents simultaneously.",
+    tags: ["React", "Next.js", "Tailwind", "Redis"],
+    imageUrl: "/j3.png",
+    githubUrl:"https://github.com/Roshan12here/LiveDOCSNEXT",
+    Link:"https://live-docsnext.vercel.app/"
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Node.js",
+  "Git", "Tailwind", "Prisma", "MongoDB", "Redux", "GraphQL", "Apollo",
+  "Express", "PostgreSQL", "Golang", "Docker", "Framer Motion",
 ] as const;
